@@ -53,6 +53,14 @@ pipeline{
 			}
 		}
 		stage('Deploy') {
+            input {
+                message "Should we continue ?"
+                ok "Yes we should"
+                submitter "alice,bob"
+                parameters{
+                    string(name:"PERSON", defaultValue: "Yes", description: "Is everytging ok to proceed ?")
+                }
+            }
 			steps{
                 script{
                     sh """
