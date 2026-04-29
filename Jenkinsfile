@@ -19,6 +19,7 @@ pipeline{
                 script{
                     sh """
                         echo "Testing"
+                        exit 1
                     """
                 }
 			}
