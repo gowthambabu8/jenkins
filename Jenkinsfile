@@ -43,7 +43,6 @@ pipeline{
                 script{
                     sh """
                         echo "Testing"
-                        exit 0
                         echo "Name is ${params.PERSON}"
                         echo "Biography is ${params.BIOGRAPHY}"
                         echo "TOGGLE is ${params.TOGGLE}"
