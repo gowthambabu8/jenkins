@@ -33,7 +33,7 @@ pipeline{
                     sh """
                         echo "Building"
                         echo "course is $COURSE"
-                        sleep 10
+                        sleep 5
                     """
                 }
 			}
